@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Mesón Caudillo</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href="http://fonts.googleapis.com/css?family=Wellfleet" rel="stylesheet" type="text/css">
+	   <link href="http://fonts.googleapis.com/css?family=Wellfleet" rel="stylesheet" type="text/css">
+	   <link href="http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" rel="stylesheet" type="text/css">	
+	   <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+	   <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+<!--Favicon //-->
+<link rel="icon" type="image/jpg" href="favicon.ico"/>
+	  <script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+ </head> 
+<!--Icons //-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<body>
+
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> Mesón Caudillo </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Menu</a></li>
+		<li><a href="#slide3" title="Next Section" class="active">About</a></li>
+		<li><a href="#slide4" title="Next Section" class="active">Contact</a></li>
+		<li><a href="#slide5" title="Next Section" class="active">Reservations</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+            <h2 class="h2">Bienvenidos</h2>
+		    <h1 class="h2">Mesón Caudillo</h1>
+		     <h3 class="h2">Spanish Traditional Food </h3>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes2">Our restaurant is based on a traditional Spanish restaurant that can be found in any city or town, here we are committed to bringing typical Spanish food and format to offer our customers a great experience.</h3>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <h3 class="quotes2"> Here you can enjoy all kinds of different and affordable meals for anyone. If you make a reservation and want to try a specific dish you can make a request and we will do everything possible to make it come true.  </h3>
+		    </div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+		    <h3 class="quotes final"> &nbsp; &nbsp; &nbsp; Te esperamos en el Mesón Caudillo.</h3>
+		   <h4 class="author_name_gray">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Alex Moreno del Río </h4>
+		</div> 
+		</div> 
+    </div> 	
+	
+<!----- SLIDES END --->
+	
+	<div class="menudeldia">
+		<h4 class="h4">Menú del día</h4>
+		<h5 class="h5"> Primer plato</h5>
+		<p class="esp">Cocido Madrileño</p>
+		<p class="eng">Madrid stew</p>
+		<p class="esp">Piquillos rellenos de bacalao</p>
+		<p class="eng">Piquillos stuffed with cod</p>
+		<p class="esp">Crema de verduras</p>
+		<p class="eng">Vegetables cream</p>
+		<p class="esp">Gazpacho</p>
+		<h5 class="h5"> Segundo plato</h5>
+		<p class="esp">Cachopo</p>
+		<p class="esp">Salmón a la sal</p>
+		<p class="eng">Salt salmon</p>
+		<p class="esp">Callos a la madrileña</p>
+		<p class="eng">Madrid-style tripe</p>
+		<p class="esp">Presa ibérica</p>
+		<p class="eng">Iberian prey</p>
+		<h5 class="h5"> Postres</h5>
+		<p class="esp">Crema catalana</p>
+		<p class="eng">Catalan cream</p>
+		<p class="esp">Arroz con leche</p>
+		<p class="eng">Rice pudding</p>
+		<p class="esp">Flan</p>
+		<p class="eng">Custard</p>
+		<p class="esp">Tarta de queso</p>
+		<p class="eng">Cheesecake</p>
+		<p class="esp">Café</p>
+		<p class="eng">Coffee</p>
+	</div>	
+
+<footer class="footer">
+	
+	<span class="material-symbols-outlined">
+allergy
+</span>
+<span class="material-symbols-outlined">
+language
+</span>
+ <p class="info">Allergernic information&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Language</p>
+	<h4 class="copyright">Copyright Owner Alex Moreno</h4>
+
+</footer>
+</body>
+</html>
